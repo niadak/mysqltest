@@ -9,6 +9,10 @@ jobs:
     - uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - uses: Azure/webapps-deploy@users/suaggar/containerrelease
+      with: 
+        app-name: actionBB  # Replace with your app name
+        package: './21.zip'
     - uses: azure/mysql-action@v1
       with:
         server-name: xaxlemysql.mysql.database.azure.com

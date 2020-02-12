@@ -1,0 +1,8 @@
+CREATE TABLE  'emp' (
+  'id' INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  'name' VARCHAR(45) NOT NULL,
+  'lastname' VARCHAR(45),
+  'dept' VARCHAR(45) DEFAULT 'sales',
+  PRIMARY KEY ('id')
+)
+ENGINE = InnoDB;
